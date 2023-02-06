@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/atompi/leetcode/nineonetwo"
+	"github.com/atompi/leetcode/onesixeight"
 )
 
 func main() {
@@ -21,7 +21,7 @@ func main() {
 	// nums := []int{1, 4, 3}
 	// result := twofivesixseven.MinimumScore(nums)
 
-	nums := []int{5, 2, 3, 1}
-	result := nineonetwo.SortArray(nums)
+	columnNumber := 28
+	result := onesixeight.ConvertToTitle(columnNumber)
 	fmt.Println(result)
 }
