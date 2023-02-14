@@ -3,12 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/atompi/leetcode/onefivetwothree"
+	"github.com/atompi/leetcode/sixsix"
 )
 
 func main() {
-	lower := 11
-	upper := 11
-	result := onefivetwothree.CountOdds(lower, upper)
+	s := []int{0}
+	result := sixsix.PlusOne(s)
 	fmt.Println(result)
 }
