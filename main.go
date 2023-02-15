@@ -3,11 +3,12 @@ package main
 import (
 	"fmt"
 
-	"github.com/atompi/leetcode/sixsix"
+	"github.com/atompi/leetcode/nineeightnine"
 )
 
 func main() {
-	s := []int{0}
-	result := sixsix.PlusOne(s)
+	num := []int{2, 1, 5}
+	k := 1808
+	result := nineeightnine.AddToArrayForm(num, k)
 	fmt.Println(result)
 }
