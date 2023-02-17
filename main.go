@@ -3,12 +3,12 @@ package main
 import (
 	"fmt"
 
-	"github.com/atompi/leetcode/nineeightnine"
+	"github.com/atompi/leetcode/twoninenine"
 )
 
 func main() {
-	num := []int{2, 1, 5}
-	k := 1808
-	result := nineeightnine.AddToArrayForm(num, k)
+	secret := "1"
+	guess := "1"
+	result := twoninenine.GetHint(secret, guess)
 	fmt.Println(result)
 }
