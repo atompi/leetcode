@@ -1,5 +1,11 @@
 package main
 
+import (
+	"fmt"
+
+	"github.com/atompi/leetcode/fourthree"
+)
+
 func main() {
 	// 2568 out of memory
 	// nums := []int{8388608, 131072, 128, 2097152, 65536, 2048, 438, 1048576, 8192, 32, 8, 64, 1024, 2244, 512, 262144, 4096, 16384, 4, 256, 2, 4194304, 2203, 16, 32768, 410, 524288, 765, 1}
@@ -14,6 +20,9 @@ func main() {
 	// 2567 wrong answer
 	// nums := []int{1, 4, 3}
 	// result := twofivesixseven.MinimumScore(nums)
-	// result := 0
-	// fmt.Println(result)
+
+	num1 := "123"
+	num2 := "456"
+	result := fourthree.Multiply(num1, num2)
+	fmt.Println(result)
 }
