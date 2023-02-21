@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/atompi/leetcode/fourthree"
+	"github.com/atompi/leetcode/fivefourzero"
 )
 
 func main() {
@@ -21,8 +21,7 @@ func main() {
 	// nums := []int{1, 4, 3}
 	// result := twofivesixseven.MinimumScore(nums)
 
-	num1 := "123"
-	num2 := "456"
-	result := fourthree.Multiply(num1, num2)
+	nums := []int{1, 1, 2, 2, 3, 4, 4}
+	result := fivefourzero.SingleNonDuplicate(nums)
 	fmt.Println(result)
 }
