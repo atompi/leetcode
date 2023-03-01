@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/atompi/leetcode/threethree"
+	"github.com/atompi/leetcode/nineonetwo"
 )
 
 func main() {
@@ -21,8 +21,7 @@ func main() {
 	// nums := []int{1, 4, 3}
 	// result := twofivesixseven.MinimumScore(nums)
 
-	nums := []int{1, 2, 3, 0, 21, 22}
-	target := 21
-	result := threethree.Search(nums, target)
+	nums := []int{5, 2, 3, 1}
+	result := nineonetwo.SortArray(nums)
 	fmt.Println(result)
 }
