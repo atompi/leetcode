@@ -1,4 +1,4 @@
-package onefivetwothree
+package lc1523
 
 func CountOdds(low int, high int) int {
 	result := 0
