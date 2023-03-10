@@ -1,7 +1,5 @@
 package lc904
 
-import "github.com/atompi/leetcode/utils/max"
-
 func TotalFruit(fruits []int) int {
 	left, right, counter, res, freq := 0, 0, 1, 1, map[int]int{}
 	freq[fruits[0]]++
@@ -14,7 +12,7 @@ func TotalFruit(fruits []int) int {
 			freq[fruits[right]]++
 		} else {
 			if counter == 0 || (counter > 0 && right == len(fruits)-1) {
-				res = max.MaxOfTwoInt(res, right-left+1)
+				res = max(res, right-left+1)
 			}
 			freq[fruits[left]]--
 			if freq[fruits[left]] == 0 {
@@ -24,4 +22,11 @@ func TotalFruit(fruits []int) int {
 		}
 	}
 	return res
+}
+
+func max(a, b int) int {
+	if a > b {
+		return a
+	}
+	return b
 }
