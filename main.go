@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/atompi/leetcode/lc2587"
+	"github.com/atompi/leetcode/lc2492"
 )
 
 func main() {
@@ -21,7 +21,8 @@ func main() {
 	// nums := []int{1, 4, 3}
 	// result := twofivesixseven.MinimumScore(nums)
 
-	num := []int{2, 3, 1}
-	result := lc2587.MaxScore(num)
+	roads := [][]int{{1, 2, 2}, {1, 3, 4}, {3, 4, 7}}
+	n := 4
+	result := lc2492.MinScore(n, roads)
 	fmt.Println(result)
 }
