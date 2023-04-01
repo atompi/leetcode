@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/atompi/leetcode/lc2492"
+	"github.com/atompi/leetcode/lc87"
 )
 
 func main() {
@@ -21,8 +21,8 @@ func main() {
 	// nums := []int{1, 4, 3}
 	// result := twofivesixseven.MinimumScore(nums)
 
-	roads := [][]int{{1, 2, 2}, {1, 3, 4}, {3, 4, 7}}
-	n := 4
-	result := lc2492.MinScore(n, roads)
+	s1 := "abcde"
+	s2 := "abced"
+	result := lc87.IsScramble(s1, s2)
 	fmt.Println(result)
 }
