@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/atompi/leetcode/lc87"
+	"github.com/atompi/leetcode/problemset/lc87"
 )
 
 func main() {
