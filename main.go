@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/atompi/leetcode/problemset/lc87"
+	"github.com/atompi/leetcode/problemset/lc2609"
 )
 
 func main() {
@@ -21,8 +21,7 @@ func main() {
 	// nums := []int{1, 4, 3}
 	// result := twofivesixseven.MinimumScore(nums)
 
-	s1 := "abcde"
-	s2 := "abced"
-	result := lc87.IsScramble(s1, s2)
+	s := "000111"
+	result := lc2609.FindTheLongestBalancedSubstring(s)
 	fmt.Println(result)
 }
