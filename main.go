@@ -3,12 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/atompi/leetcode/problemset/lc881"
+	"github.com/atompi/leetcode/problemset/lc2390"
 )
 
 func main() {
-	people := []int{5, 1, 2, 4}
-	limit := 6
-	result := lc881.NumRescueBoats(people, limit)
+	s := "leet**cod*e"
+	result := lc2390.RemoveStars(s)
 	fmt.Println(result)
 }
