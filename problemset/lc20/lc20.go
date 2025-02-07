@@ -1,17 +1,24 @@
 package lc20
 
 func IsValid(s string) bool {
-	if len(s) == 0 {
-		return true
+	if len(s) < 2 || len(s)%2 != 0 {
+		return false
+	}
+	m := map[string]string{
+		")": "(",
+		"}": "{",
+		"]": "[",
 	}
 	stack := make([]rune, 0)
 	for _, v := range s {
-		if v == '(' || v == '{' || v == '[' {
+		switch v {
+		case '(', '{', '[':
 			stack = append(stack, v)
-		} else if len(stack) > 0 && (v == ')' && stack[len(stack)-1] == '(' || v == '}' && stack[len(stack)-1] == '{' || v == ']' && stack[len(stack)-1] == '[') {
+		case ')', '}', ']':
+			if len(stack) == 0 || m[string(v)] != string(stack[len(stack)-1]) {
+				return false
+			}
 			stack = stack[:len(stack)-1]
-		} else {
-			return false
 		}
 	}
 	return len(stack) == 0
