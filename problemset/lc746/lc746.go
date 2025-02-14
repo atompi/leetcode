@@ -9,10 +9,3 @@ func MinCostClimbingStairs(cost []int) int {
 	}
 	return min(dp0, dp1)
 }
-
-func min(a, b int) int {
-	if a < b {
-		return a
-	}
-	return b
-}
